@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white"
+    tools:context="com.ocwvar.muzi.Activities.successActivity">
+
+
+
+    <TextView
+        android:text="支付确认"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView78"
+        android:textSize="20sp"
+
+        android:textColor="#fb7e00"/>
+
+    <TextView
+
+        android:text="您将支付99元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="22sp"
+        android:id="@+id/payment_content"
+        android:layout_below="@+id/textView78"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/payment_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView60" />
+
+    <Button
+        android:text="确认支付"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:background="@drawable/order_buttonbg"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/payment_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/button" />
+
+    <CheckBox
+        android:text="使用100积分抵消一定金额"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView60"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/checkBox" />
+
+</RelativeLayout>

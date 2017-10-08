@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_payhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_payhistory_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingRight="20dp"
+            android:text="按月份查找"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_payhistory_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:paddingRight="20dp"
+            android:text="查询所有"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_payhistory_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="统计数据"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/panel_payhistory_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView_payhistory_getall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="开始查询"
+            android:textColor="#650000"/>
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="获取最新的 1000 条数据"
+            android:textColor="#181818"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel_payhistory_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="查询年份:"
+            android:textColor="#181818"/>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="查询月份:"
+            android:textColor="#181818"/>
+
+        <EditText
+            android:id="@+id/editText_payhistory_month"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/textView_payhistory_start"
+            android:layout_toRightOf="@+id/textView48"
+            android:layout_toStartOf="@+id/textView_payhistory_start"
+            android:background="#ececec"
+            android:gravity="center"
+            android:hint="月份"
+            android:inputType="number"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#c6c6c6"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textView_payhistory_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="开始查询"
+            android:textColor="#650000"/>
+
+        <EditText
+            android:id="@+id/editText_payhistory_year"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView48"
+            android:layout_toRightOf="@+id/textView47"
+            android:layout_toStartOf="@+id/textView48"
+            android:background="#ececec"
+            android:gravity="center"
+            android:hint="年份"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#c6c6c6"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_payhistory_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView_payhistory_submit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView_payhistory_submit_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" -- "
+                android:textColor="#0f0f0f"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView_payhistory_submit_month"
+                android:layout_toRightOf="@+id/textView_payhistory_submit_month"
+                android:text="/"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_payhistory_submit_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView50"
+                android:layout_toRightOf="@+id/textView50"
+                android:text=" -- "
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_payhistory_submit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#1f1f1f"/>
+
+        <ListView
+            android:id="@+id/listView_payhistory_submit_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_payHistoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d9d9d9"/>
+
+</LinearLayout>

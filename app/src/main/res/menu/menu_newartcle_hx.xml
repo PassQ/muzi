@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_request_question"
+        android:title="服务投诉"
+        />
+
+    <item
+        android:id="@+id/menu_request_askService"
+        android:title="服务求助"
+        />
+
+    <item
+        android:id="@+id/menu_request_suggest"
+        android:title="合理化建议"
+        />
+
+</menu>

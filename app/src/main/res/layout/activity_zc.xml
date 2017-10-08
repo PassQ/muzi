@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efeff1"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#fff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_neirong"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@xml/shape"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText_inputPN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:hint="请输入手机号"
+            android:maxLength="11"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:text="根据政策 , 一个手机号在一天内只能请求5次短信验证码 , 若超过次数的用户请您次日再进行尝试"/>
+
+    <Button
+        android:id="@+id/button_zc_sendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/send"
+        android:text="下一步"
+        android:textColor="#ffffff"/>
+</LinearLayout>

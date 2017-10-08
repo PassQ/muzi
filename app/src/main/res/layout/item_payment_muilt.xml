@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/view_payment_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView_payment_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_content_add"/>
+
+        <TextView
+            android:id="@+id/textView_payment_addCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ea0a28"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageView_payment_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_content_remove"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/radioButton_payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="12dp"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:text="水费"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_payment_singel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="12dp"
+            android:textColor="#FF444444"/>
+
+        <TextView
+            android:id="@+id/textView_payment_payCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF444444"/>
+
+        <TextView
+            android:id="@+id/textView_payment_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF444444"/>
+
+    </LinearLayout>
+
+</FrameLayout>

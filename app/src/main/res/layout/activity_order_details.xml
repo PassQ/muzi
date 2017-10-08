@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocwvar.muzi.Activities.CircumActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/order_details_toolbar" />
+
+    <TextView
+        android:text="商家名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="28sp"
+        android:id="@+id/order_details_name"
+        />
+
+    <TextView
+        android:text="商家介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#fb7e00"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:text="详细介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_details_introduce"
+
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:background="#e9e7e7"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView84" />
+    <TextView
+        android:text="预约状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="#fb7e00"
+        android:id="@+id/textView82"
+        />
+
+    <TextView
+        android:text="状态"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_status" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@+id/textView83"
+
+        android:layout_marginTop="20dp"
+        android:background="#e9e7e7"
+        android:id="@+id/textView85" />
+    <TextView
+    android:text="商家联系电话"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="29dp"
+    android:layout_marginRight="29dp"
+    android:layout_marginStart="29dp"
+    android:layout_marginTop="16dp"
+    android:textSize="20sp"
+    android:textColor="#fb7e00"
+    />
+
+    <TextView
+        android:text="电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_details_tel" />
+    <TextView
+        android:text="商家响应信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="#fb7e00"
+        />
+
+    <TextView
+        android:text="原因"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_details_massage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="#e9e7e7">
+        <Button
+            android:text="确定"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/order_buttonbg"
+            android:id="@+id/order_apply" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

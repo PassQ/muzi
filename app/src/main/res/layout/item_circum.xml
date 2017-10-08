@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="8dp"
+    android:background="@xml/bulletinshape">
+
+    <TextView
+        android:id="@+id/item_circum_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_circum_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/item_circum_image"
+        android:layout_toRightOf="@+id/item_circum_image"
+        android:singleLine="true"
+        android:text="New Text"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_circum_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_circum_title"
+        android:layout_alignStart="@+id/item_circum_title"
+        android:layout_centerVertical="true"
+        android:maxLines="2"
+        android:text="服务详细介绍"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/item_circum_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务联系方式"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_alignBottom="@+id/item_circum_image"
+        android:layout_alignLeft="@+id/item_circum_message"
+        android:layout_alignStart="@+id/item_circum_message" />
+
+    <TextView
+        android:text="信息发布时间"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_circum_time"
+        android:layout_below="@+id/item_circum_tel"
+        android:layout_alignLeft="@+id/item_circum_tel"
+         />
+
+    <ImageView
+        android:id="@+id/item_circum_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+</RelativeLayout>

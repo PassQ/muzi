@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ocwvar.muzi.Activities.successActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/success_toolbar" />
+
+    <TextView
+        android:text="预约成功"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/textView78"
+        android:textSize="30sp"
+
+        android:textColor="#000"/>
+
+    <TextView
+        android:text="已成功向商家发起预约"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textSize="18sp"
+        android:id="@+id/textView79"
+        android:layout_below="@+id/textView78"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView79"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:id="@+id/success_button"
+        android:background="@drawable/send"/>
+</RelativeLayout>

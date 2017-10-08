@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocwvar.muzi.Activities.CircumActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/circum_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/circum_detailed_imageview"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <TextView
+        android:text="服务名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="28sp"
+        android:id="@+id/circum_detailed_name"
+   />
+
+    <TextView
+        android:text="服务介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#fb7e00"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:text="详细介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circum_detailed_introduce"
+
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:background="#e9e7e7"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView84" />
+    <TextView
+        android:text="联系方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="#fb7e00"
+        android:id="@+id/textView82"
+        />
+
+    <TextView
+        android:text="电话："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView53" />
+
+    <TextView
+        android:text="手机"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/circum_detailed_tel" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView83"
+        android:layout_marginTop="20dp"
+        android:background="#e9e7e7"
+        android:id="@+id/textView85"
+        android:layout_weight="0.45" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

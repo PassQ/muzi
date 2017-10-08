@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.ocwvar.muzi.Activities.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/scrollVP"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#3f3f3f"
+                    android:clickable="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/func_GList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="10dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/info_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_ad2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_integral" />
+
+                    <ImageView
+                        android:id="@+id/imageView_ad3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_bespeak" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/imageView_ad4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_shopping" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/imageView_ad5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_payment" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/imageView_ad6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_convenient" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/imageView_ad7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lmg_love" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#63b8ff">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="184dp">
+
+            <ImageView
+                android:id="@+id/slide_bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/small_blur" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="积分"
+                    android:textSize="16sp"
+                    android:drawableRight="@drawable/ic_social_whatshot"
+                    android:id="@+id/text_score"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/main_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/slide_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/slide_head"
+            android:layout_marginLeft="28dp"
+            android:clickable="true" />
+
+        <com.ocwvar.muzi.Utils.CircleImageView
+            android:id="@+id/slide_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/slide_list"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/slide_list"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="150dp"
+            app:civ_border_color="#92ccff"
+            app:civ_border_overlay="true"
+            app:civ_border_width="3dp" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

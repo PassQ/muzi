@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ocwvar.muzi.Activities.CircumActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/circum_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@color/red"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imageView38"
+        android:layout_below="@+id/circum_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp" />
+
+    <TextView
+        android:text="服务名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="13dp"
+        android:textSize="28sp"
+        android:id="@+id/textView80"
+        android:layout_alignTop="@+id/imageView38"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="详细介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView81"
+        android:layout_below="@+id/textView80"
+        android:layout_alignLeft="@+id/textView80"
+        android:layout_alignStart="@+id/textView80"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView82"
+        android:layout_alignRight="@+id/textView81"
+        android:layout_alignEnd="@+id/textView81"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView83" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+
+        android:background="#000"
+        android:id="@+id/textView84" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView83"
+
+
+        android:layout_marginTop="46dp"
+        android:background="#000"
+        android:id="@+id/textView85" />
+
+    <TextView
+        android:text="联系方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textSize="28sp"
+        android:id="@+id/textView82"
+        android:layout_below="@+id/textView84"
+        android:layout_alignLeft="@+id/textView81"
+        android:layout_alignStart="@+id/textView81" />
+</RelativeLayout>
